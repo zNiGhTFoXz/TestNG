@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="AppTest" verbose="1" >
+    <suite-files>
+        <suite-file path="package.library.xml" />
+        <suite-file path="package.exception.xml" />
+    </suite-files>
+</suite>
