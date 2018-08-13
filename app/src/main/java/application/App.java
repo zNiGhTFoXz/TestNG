@@ -17,9 +17,7 @@ public class App {
             try {
                 System.out.format(MESSAGE_RESULT_TEMPLATE, LMath.hyperbola(consoleReader()));
                 break;
-            }catch (ZeroValueException ex){
-                System.out.println(ex.getMessage());
-            }catch (StringValueException ex){
+            }catch (ZeroValueException|StringValueException ex){
                 System.out.println(ex.getMessage());
             }catch (Exception ex){
                 ex.printStackTrace();

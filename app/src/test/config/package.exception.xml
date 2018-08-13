@@ -1,9 +1,16 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="ExceptionTest" verbose="1" >
+<suite name="ExceptionTest" verbose="2" >
     <test name="Exceptions">
-        <packages>
-            <package name="exception"/>
-        </packages>
+        <classes>
+            <class name="exception.TestStringValueException">
+                <parameter name="number" value="15143"/>
+                <parameter name="message" value="None Integer value!"/>
+            </class>
+            <class name="exception.TestZeroValueException">
+                <parameter name="number" value="15142"/>
+                <parameter name="message" value="Value can't be equal to '0'"/>
+            </class>
+        </classes>
     </test>
 </suite>
