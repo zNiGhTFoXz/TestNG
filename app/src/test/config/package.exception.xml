@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="ExceptionTest" verbose="1" >
-    <test name="Exception">
+    <test name="Exceptions">
         <packages>
-            <package name="Exception"/>
+            <package name="exception"/>
         </packages>
     </test>
 </suite>

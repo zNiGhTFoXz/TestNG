@@ -1,20 +1,20 @@
-package Exception;
+package exception;
 
-import application.Exception.StringValueException;
+import application.exception.ZeroValueException;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-public class TestStringValueException {
-    private StringValueException exception;
+public class TestZeroValueException {
+    private ZeroValueException exception;
     private int expectedNumber;
     private String expectedMessage;
 
     @BeforeClass
     public void setUp(){
-        this.exception = new StringValueException();
-        this.expectedNumber = 15143;
-        this.expectedMessage = "None Integer value!";
+        this.exception = new ZeroValueException();
+        this.expectedNumber = 15142;
+        this.expectedMessage = "Value can't be equal to '0'";
     }
 
     /*
