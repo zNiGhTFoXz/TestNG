@@ -1,4 +1,4 @@
-package application.Exception;
+package application.exception;
 
 public class ZeroValueException extends Exception {
     private static final int DEFAULT_EXCEPTION_NUMBER = 15142;

@@ -1,6 +1,6 @@
-package application.Functions;
+package application.functions;
 
-import application.Exception.ZeroValueException;
+import application.exception.ZeroValueException;
 
 public final class LMath {
 

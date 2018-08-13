@@ -1,8 +1,8 @@
 package application;
 
-import application.Exception.StringValueException;
-import application.Exception.ZeroValueException;
-import application.Functions.LMath;
+import application.exception.StringValueException;
+import application.exception.ZeroValueException;
+import application.functions.LMath;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

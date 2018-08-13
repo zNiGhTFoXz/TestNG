@@ -1,4 +1,4 @@
-package application.Exception;
+package application.exception;
 
 import java.util.InputMismatchException;
 
