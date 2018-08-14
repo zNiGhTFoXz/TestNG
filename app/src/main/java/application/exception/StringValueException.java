@@ -4,7 +4,7 @@ import java.util.InputMismatchException;
 
 public class StringValueException extends InputMismatchException {
     private static final int DEFAULT_EXCEPTION_NUMBER = 15143;
-    private static final String DEFAULT_DETAIL_MESSAGE = "None Integer value!";
+    private static final String DEFAULT_DETAIL_MESSAGE = "None integer or double value!";
 
     private int number;
 
