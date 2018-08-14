@@ -24,12 +24,12 @@ public class TestLMathLibrary {
     }
 
     @Test(dataProvider = "integerProvider")
-    public void testDevideByAnInteger(double denominator, double expected) throws ZeroValueException {
+    public void testDivideByAnInteger(double denominator, double expected) throws ZeroValueException {
         Assert.assertEquals(LMath.hyperbola(denominator), expected);
     }
 
     @Test(expectedExceptions = ZeroValueException.class)
-    public void testDevideByAZero() throws ZeroValueException{
+    public void testDivideByAZero() throws ZeroValueException{
         LMath.hyperbola(0);
     }
 }
