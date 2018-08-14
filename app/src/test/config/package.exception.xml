@@ -5,7 +5,7 @@
         <classes>
             <class name="exception.TestStringValueException">
                 <parameter name="number" value="15143"/>
-                <parameter name="message" value="None Integer value!"/>
+                <parameter name="message" value="None integer or double value!"/>
             </class>
             <class name="exception.TestZeroValueException">
                 <parameter name="number" value="15142"/>
