@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 
 public class TestLMathLibrary {
 
-    @DataProvider(name = "integerProvider")
-    public static Object[][] integerProvider() {
+    @DataProvider(name = "denominatorProvider")
+    public static Object[][] denominatorProvider() {
         /*{denominator, expected}*/
         return new Object[][] {
                 { 1, 1.0 },
@@ -23,8 +23,8 @@ public class TestLMathLibrary {
         };
     }
 
-    @Test(dataProvider = "integerProvider")
-    public void testDivideByAnInteger(double denominator, double expected) throws ZeroValueException {
+    @Test(dataProvider = "denominatorProvider")
+    public void testDivideByADenominator(double denominator, double expected) throws ZeroValueException {
         Assert.assertEquals(LMath.hyperbola(denominator), expected);
     }
 
