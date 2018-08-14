@@ -17,12 +17,14 @@ public class TestLMathLibrary {
                 { 3, 0.3333333333333333},
                 { 999999, 1.000001000001e-6},
                 { 999999999, 1.000000001e-9},
-                {-999999999, -1.000000001e-9}
+                {-999999999, -1.000000001e-9},
+                {0.3, 3.3333333333333335},
+                {0.9712381, 1.0296136446871267}
         };
     }
 
     @Test(dataProvider = "integerProvider")
-    public void testDevideByAnInteger(long denominator, double expected) throws ZeroValueException {
+    public void testDevideByAnInteger(double denominator, double expected) throws ZeroValueException {
         Assert.assertEquals(LMath.hyperbola(denominator), expected);
     }
 

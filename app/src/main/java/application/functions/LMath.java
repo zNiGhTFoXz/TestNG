@@ -4,7 +4,7 @@ import application.exception.ZeroValueException;
 
 public final class LMath {
 
-    public static double hyperbola(long x) throws ZeroValueException {
+    public static double hyperbola(double x) throws ZeroValueException {
         if(x == 0){
             throw new ZeroValueException();
         }

@@ -5,6 +5,7 @@ import application.exception.ZeroValueException;
 import application.functions.LMath;
 
 import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class App {
@@ -26,10 +27,11 @@ public class App {
         }
     }
 
-    private long consoleReader() throws StringValueException {
+    private double consoleReader() throws StringValueException {
         Scanner in = new Scanner(System.in);
+        in.useLocale(Locale.US);
         try {
-            return in.nextLong();
+            return in.nextDouble();
         }catch (InputMismatchException exp){
             throw new StringValueException();
         }
